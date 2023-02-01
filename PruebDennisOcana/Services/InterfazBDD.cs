@@ -9,9 +9,9 @@ namespace PruebDennisOcana.Services
 {
     public interface InterfazBDD
     {
-        Task<List<Photo>> GetPhotoList();
-        Task<int> AddPhoto(Photo foto);
-        Task<int> DeletePhoto(Photo foto);
-        Task<int> UpdatePhoto(Photo foto);
+        Task<List<Photo>> GetPhotoListOD();
+        Task<int> AddPhotoOd(Photo foto);
+        Task<int> DeletePhotoOD(Photo foto);
+        Task<int> UpdatePhotoOD(Photo foto);
     }
 }

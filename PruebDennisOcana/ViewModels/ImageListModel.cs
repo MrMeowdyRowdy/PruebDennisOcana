@@ -25,10 +25,10 @@ namespace PruebDennisOcana.ViewModels
             }
 
             [ICommand]
-            public async void GetPhotoList()
+            public async void GetPhotoListOD()
             {
                 Photos.Clear();
-                var PhotoList = await _noteService.GetPhotoList();
+                var PhotoList = await _noteService.GetPhotoListOD();
                 if (PhotoList?.Count > 0)
                 {
                     PhotoList = PhotoList.OrderBy(f => f.img_src).ToList();
@@ -41,13 +41,13 @@ namespace PruebDennisOcana.ViewModels
             }
 
             [ICommand]
-            public async void AddUpdatePhoto()
+            public async void AddUpdatePhotoOD()
             {
                 await AppShell.Current.GoToAsync(nameof(AddUpdateImage));
             }
 
             [ICommand]
-            public async void MostrarAccion(Photo photoModel)
+            public async void MostrarAccionOD(Photo photoModel)
             {
                 var response = await AppShell.Current.DisplayActionSheet("Seleccione Opcion", "OK", null, "Editar", "Borrar");
                 if (response == "Editar")
@@ -61,10 +61,10 @@ namespace PruebDennisOcana.ViewModels
 
                 else if (response == "Borrar")
                 {
-                    var delResponse = await _noteService.DeletePhoto(photoModel);
+                    var delResponse = await _noteService.DeletePhotoOD(photoModel);
                     if (delResponse > 0)
                     {
-                        GetPhotoList();
+                        GetPhotoListOD();
                     }
                 }
             }
