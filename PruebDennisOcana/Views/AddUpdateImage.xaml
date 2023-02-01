@@ -8,7 +8,6 @@
 
             <Image
                     x:Name="imageNasa"
-                    Source="{Binding}"
                     HeightRequest="200"
                     HorizontalOptions="Center"
                     VerticalOptions="Start"/>
@@ -22,8 +21,8 @@
 
 
                 <VerticalStackLayout>
-                    <Label Text="Descripción del comentario del servicio" />
-                    <Entry  Text="{Binding PhotoDetail.earth_date}" Placeholder="Comentario" x:Name="entryDate"/>
+                    <Label Text="Descripción del comentario de la fotografia" />
+                    <Entry  Text="{Binding PhotoDetail.comentario}" Placeholder="Comentario" x:Name="entryDate"/>
                     <BoxView HeightRequest="0.8" Color="Gray" />
                 </VerticalStackLayout>
 

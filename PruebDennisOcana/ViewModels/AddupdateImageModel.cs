@@ -38,7 +38,7 @@ namespace PruebDennisOcana.ViewModels
                 response = await photoService.AddPhoto(new Apis.Photo
                 {
                     img_src = PhotoDetail.img_src,
-                    earth_date = PhotoDetail.earth_date,
+                    comentario = PhotoDetail.comentario,
                 });
             }
 
