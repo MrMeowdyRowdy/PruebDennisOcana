@@ -3,10 +3,51 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PruebDennisOcana.Views.AddUpdateImage"
              Title="AddUpdateImage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image
+                    x:Name="imageNasa"
+                    Source="{Binding}"
+                    HeightRequest="200"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"/>
+
+            <StackLayout Margin="10" Spacing="15">
+                <VerticalStackLayout>
+                    <Label Text="Nombre del servicio"  />
+                    <Entry Text="{Binding PhotoDetail.img_src}" Placeholder="Titulo" x:Name="src" />
+                    <BoxView HeightRequest="0.8" Color="Gray" />
+                </VerticalStackLayout>
+
+
+                <VerticalStackLayout>
+                    <Label Text="Descripción del comentario del servicio" />
+                    <Entry  Text="{Binding PhotoDetail.earth_date}" Placeholder="Comentario" x:Name="entryDate"/>
+                    <BoxView HeightRequest="0.8" Color="Gray" />
+                </VerticalStackLayout>
+
+
+                <VerticalStackLayout>
+                    <Label
+                x:Name="label"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout>
+                    <Button
+                x:Name="CounterBtn"
+                Text="Click me"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="Frase_and_Image"
+                HorizontalOptions="Center" />
+                </VerticalStackLayout>
+                 <Button Text="Guardar Nota" Command="{Binding AddUpdatePhotoCommand}"/>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+    
 </ContentPage>

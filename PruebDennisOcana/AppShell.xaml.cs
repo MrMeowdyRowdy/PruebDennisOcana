@@ -8,8 +8,8 @@ public partial class AppShell : Shell
 	{
 		InitializeComponent();
 
-		Routing.RegisterRoute(nameof(Views.ImageList), typeof(ImageList));
-        Routing.RegisterRoute(nameof(Views.AddUpdateImage), typeof(AddUpdateImage));
+		Routing.RegisterRoute(nameof(ImageList), typeof(ImageList));
+        Routing.RegisterRoute(nameof(AddUpdateImage), typeof(AddUpdateImage));
     }
 	
 }

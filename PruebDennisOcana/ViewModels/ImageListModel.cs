@@ -8,6 +8,7 @@ using Microsoft.Toolkit.Mvvm.Input;
 using Microsoft.Toolkit.Mvvm.ComponentModel;
 using System.Collections.ObjectModel;
 using PruebDennisOcana.Services;
+using PruebDennisOcana.Views;
 
 namespace PruebDennisOcana.ViewModels
 {
@@ -42,7 +43,7 @@ namespace PruebDennisOcana.ViewModels
             [ICommand]
             public async void AddUpdatePhoto()
             {
-                await AppShell.Current.GoToAsync(nameof(MainPage));
+                await AppShell.Current.GoToAsync(nameof(AddUpdateImage));
             }
 
             [ICommand]
