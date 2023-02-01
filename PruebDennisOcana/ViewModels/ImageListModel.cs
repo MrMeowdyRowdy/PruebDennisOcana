@@ -56,7 +56,7 @@ namespace PruebDennisOcana.ViewModels
                 {
                     { "PhotoDetail", photoModel }
                 };
-                    await AppShell.Current.GoToAsync(nameof(MainPage), navParam);
+                    await AppShell.Current.GoToAsync(nameof(AddUpdateImage), navParam);
                 }
 
                 else if (response == "Borrar")

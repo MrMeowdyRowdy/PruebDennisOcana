@@ -26,7 +26,7 @@ namespace PruebDennisOcana.ViewModels
         }
 
         [ICommand]
-        public async void AddUpdateNote()
+        public async void AddUpdatePhoto()
         {
             int response = -1;
             if (PhotoDetail.id > 0)
