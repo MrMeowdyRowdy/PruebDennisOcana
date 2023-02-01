@@ -31,7 +31,6 @@ public partial class AddUpdateImage : ContentPage
             label.Text = imagen;
             imageNasa.Source = imagen;
             src.Text = imagen;
-            entryDate.Text = resultado1.photos[1].earth_date;
         }
 
     }

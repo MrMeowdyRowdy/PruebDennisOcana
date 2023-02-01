@@ -8,16 +8,17 @@
 
     <ScrollView>
         <StackLayout Margin="10" VerticalOptions="Fill">
-            <Label  Text="Lista de Comentarios" FontSize="28"/>
+            <Label  Text="Lista de Fotografias" FontSize="28"/>
             <Button Text="Obtener nueva fotografia" Command="{Binding AddUpdatePhotoCommand}" HorizontalOptions="End" />
             <CollectionView VerticalOptions="Start" ItemsSource="{Binding Photos}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="models:Photo">
-                        <Frame Margin="10" Padding="30">
+                        <Frame Margin="10" Padding="50">
                             <StackLayout >
                                 <VerticalStackLayout >
                                     <Label Text="{Binding img_src}" FontSize="18" FontAttributes="Bold" />
-                                    <Image Source="{Binding img_src}"></Image>
+                                    <Image Source="{Binding img_src}" HeightRequest="200"></Image >
+                                    <Label Text="{Binding comentario}" FontSize="18" FontAttributes="Italic" />
                                 </VerticalStackLayout>
                             </StackLayout>
                             <Frame.GestureRecognizers>
