@@ -25,26 +25,26 @@ namespace PruebDennisOcana.Services
         }
 
         //Codigo para interaccion de la BDD con la tabla comentarios
-        public async Task<int> AddPhoto(Photo photo)
+        public async Task<int> AddPhotoOd(Photo photo)
         {
             await ReadySteadyGO();
             return await conn.InsertAsync(photo);
         }
 
-        public async Task<int> DeletePhoto(Photo photo)
+        public async Task<int> DeletePhotoOD(Photo photo)
         {
             await ReadySteadyGO();
             return await conn.DeleteAsync(photo);
         }
 
-        public async Task<List<Photo>> GetPhotoList()
+        public async Task<List<Photo>> GetPhotoListOD()
         {
             await ReadySteadyGO();
             var photo = await conn.Table<Photo>().ToListAsync();
             return photo;
         }
 
-        public async Task<int> UpdatePhoto(Photo photo)
+        public async Task<int> UpdatePhotoOD(Photo photo)
         {
             await ReadySteadyGO();
             return await conn.UpdateAsync(photo);

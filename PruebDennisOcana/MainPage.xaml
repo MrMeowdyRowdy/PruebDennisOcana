@@ -9,7 +9,7 @@
     <ScrollView>
         <StackLayout Margin="10" VerticalOptions="Fill">
             <Label  Text="Lista de Fotografias" FontSize="28"/>
-            <Button Text="Obtener nueva fotografia" Command="{Binding AddUpdatePhotoCommand}" HorizontalOptions="End" />
+            <Button Text="Obtener nueva fotografia OD" Command="{Binding AddUpdatePhotoODCommand}" HorizontalOptions="End" />
             <CollectionView VerticalOptions="Start" ItemsSource="{Binding Photos}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="models:Photo">
@@ -22,7 +22,7 @@
                                 </VerticalStackLayout>
                             </StackLayout>
                             <Frame.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewModels:ImageListModel}},Path=MostrarAccionCommand}"
+                                <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewModels:ImageListModel}},Path=MostrarAccionODCommand}"
                                                           CommandParameter="{Binding .}" />
                             </Frame.GestureRecognizers>
                         </Frame>

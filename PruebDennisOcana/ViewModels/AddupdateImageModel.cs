@@ -20,22 +20,22 @@ namespace PruebDennisOcana.ViewModels
         private Photo _PhotoDetail = new Photo();
 
         private readonly InterfazBDD photoService;
-        public AddupdateImageModel(InterfazBDD photoService)
+        public AddupdateImageModel(InterfazBDD OD)
         {
-            this.photoService = photoService;
+            this.photoService = OD;
         }
 
         [ICommand]
-        public async void AddUpdatePhoto()
+        public async void AddUpdatePhotoOD()
         {
             int response = -1;
             if (PhotoDetail.id > 0)
             {
-                response = await photoService.UpdatePhoto(PhotoDetail);
+                response = await photoService.UpdatePhotoOD(PhotoDetail);
             }
             else
             {
-                response = await photoService.AddPhoto(new Apis.Photo
+                response = await photoService.AddPhotoOd(new Apis.Photo
                 {
                     img_src = PhotoDetail.img_src,
                     comentario = PhotoDetail.comentario,

@@ -28,9 +28,9 @@ public partial class AddUpdateImage : ContentPage
             responseFromServer1 = responseFromServer1.Trim();
             var resultado1 = JsonConvert.DeserializeObject<Rootobject>(responseFromServer1);
             string imagen = resultado1.photos[1].img_src;
-            label.Text = imagen;
-            imageNasa.Source = imagen;
-            src.Text = imagen;
+            labelOD.Text = imagen;
+            imageNasaOD.Source = imagen;
+            srcOD.Text = imagen;
         }
 
     }

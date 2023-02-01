@@ -7,21 +7,21 @@
         <VerticalStackLayout>
 
             <Image
-                    x:Name="imageNasa"
+                    x:Name="imageNasaOD"
                     HeightRequest="200"
                     HorizontalOptions="Center"
                     VerticalOptions="Start"/>
 
             <StackLayout Margin="10" Spacing="15">
                 <VerticalStackLayout>
-                    <Label Text="Nombre del servicio"  />
-                    <Entry Text="{Binding PhotoDetail.img_src}" Placeholder="Titulo" x:Name="src" />
+                    <Label Text="Nombre del servicio Dennis Ocaña"  />
+                    <Entry Text="{Binding PhotoDetail.img_src}" Placeholder="Titulo" x:Name="srcOD" />
                     <BoxView HeightRequest="0.8" Color="Gray" />
                 </VerticalStackLayout>
 
 
                 <VerticalStackLayout>
-                    <Label Text="Descripción del comentario de la fotografia" />
+                    <Label Text="Descripción del comentario de la fotografia Dennis Ocaña" />
                     <Entry  Text="{Binding PhotoDetail.comentario}" Placeholder="Comentario" x:Name="entryDate"/>
                     <BoxView HeightRequest="0.8" Color="Gray" />
                 </VerticalStackLayout>
@@ -29,9 +29,7 @@
 
                 <VerticalStackLayout>
                     <Label
-                x:Name="label"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                x:Name="labelOD"
                 FontSize="18"
                 HorizontalOptions="Center" />
                 </VerticalStackLayout>
