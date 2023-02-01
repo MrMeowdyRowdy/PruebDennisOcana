@@ -7,10 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PruebDennisOcana.Apis;
-using Microsoft.Toolkit.Mvvm.Input;
-using Microsoft.Toolkit.Mvvm.ComponentModel;
 using System.Collections.ObjectModel;
-using PruebDennisOcana.Services;
 
 namespace PruebDennisOcana.ViewModels
 {

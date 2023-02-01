@@ -1,4 +1,8 @@
-﻿namespace PruebDennisOcana;
+﻿using PruebDennisOcana.Services;
+using PruebDennisOcana.ViewModels;
+using PruebDennisOcana.Views;
+
+namespace PruebDennisOcana;
 
 public static class MauiProgram
 {
@@ -13,6 +17,11 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-		return builder.Build();
+        builder.Services.AddSingleton<InterfazBDD, BDD>();
+
+        builder.Services.AddSingleton<ImageList>();
+        builder.Services.AddSingleton<ImageListModel>();
+
+        return builder.Build();
 	}
 }
