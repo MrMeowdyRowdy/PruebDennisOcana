@@ -20,6 +20,13 @@ public static class MauiProgram
         builder.Services.AddSingleton<InterfazBDD, BDD>();
 
         builder.Services.AddSingleton<ImageList>();
+        builder.Services.AddSingleton<AddUpdateImage>();
+
+        builder.Services.AddSingleton<AddupdateImageModel>();
+
+        builder.Services.AddSingleton<MainPage>();
+
+
         builder.Services.AddSingleton<ImageListModel>();
 
         return builder.Build();

@@ -1,5 +1,5 @@
 using PruebDennisOcana.ViewModels;
-namespace PruebDennisOcana.Views;
+namespace PruebDennisOcana;
 
 public partial class ImageList : ContentPage
 {

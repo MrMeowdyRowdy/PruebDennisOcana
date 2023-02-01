@@ -2,8 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:models="clr-namespace:PruebDennisOcana.Apis"
-             xmlns:viewmModels="clr-namespace:PruebDennisOcana.ViewModels"
-             x:Class="PruebDennisOcana.Views.ImageList"
+             xmlns:viewModels="clr-namespace:PruebDennisOcana.ViewModels"
+             x:DataType="viewModels:ImageListModel"
+             x:Class="PruebDennisOcana.ImageList"
              Title="ImageList">
 
     <ScrollView>

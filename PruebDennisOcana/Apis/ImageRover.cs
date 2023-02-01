@@ -14,7 +14,7 @@ namespace PruebDennisOcana.Apis
 
         public class Photo
         {
-            [PrimaryKey]
+            [PrimaryKey,AutoIncrement]
             public int id { get; set; }
             public int sol { get; set; }
             //public Camera camera { get; set; }
