@@ -42,7 +42,7 @@
                 Clicked="Frase_and_Image"
                 HorizontalOptions="Center" />
                 </VerticalStackLayout>
-                 <Button Text="Guardar Nota" Command="{Binding AddUpdatePhotoCommand}"/>
+                 <Button Text="Guardar Nota" Command="{Binding AddUpdatePhotoODCommand}"/>
             </StackLayout>
         </VerticalStackLayout>
     </ScrollView>
