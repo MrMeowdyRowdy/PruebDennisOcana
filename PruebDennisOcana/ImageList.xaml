@@ -10,7 +10,7 @@
     <ScrollView>
         <StackLayout Margin="10" VerticalOptions="Fill">
             <Label  Text="Lista de Comentarios" FontSize="28"/>
-            <Button Text="Obtener nueva fotografia" Command="{Binding AddUpdatePhotoCommand}" HorizontalOptions="End" />
+            <Button Text="Obtener nueva fotografia" Command="{Binding AddUpdatePhotoODCommand}" HorizontalOptions="End" />
             <CollectionView VerticalOptions="Start" ItemsSource="{Binding Photos}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="models:Photo">
